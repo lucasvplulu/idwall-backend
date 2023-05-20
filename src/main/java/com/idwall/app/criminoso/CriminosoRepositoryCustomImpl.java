@@ -46,6 +46,10 @@ public class CriminosoRepositoryCustomImpl implements CriminosoRepositoryCustom 
             queryParams.add("c.sexo = " + inputDto.getSexo().ordinal());
         }
 
+        if (inputDto.getInstituicao() != null) {
+            queryParams.add("c.tipoInstituicao = " + inputDto.getInstituicao().ordinal());
+        }
+
         if (inputDto.getIdadeInicial() != null && inputDto.getIdadeFinal() != null) {
             var inicio = LocalDate.now().minusYears((long) inputDto.getIdadeInicial());
             var fim = LocalDate.now().minusYears((long) inputDto.getIdadeFinal());

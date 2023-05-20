@@ -1,5 +1,6 @@
 package com.idwall.app.criminoso.dto;
 
+import com.idwall.app.util.enumeration.TipoInstituicao;
 import com.idwall.app.util.enumeration.TipoSexo;
 import lombok.*;
 
@@ -9,6 +10,7 @@ public class CriminosoInputDto {
     private String nome;
     private String apelido;
     private TipoSexo sexo;
+    private TipoInstituicao instituicao;
     private Long idadeInicial;
     private Long idadeFinal;
     private String localNascimento;

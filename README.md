@@ -1,13 +1,13 @@
 # idwall-backend
 
 # Ferramentas
+* Spring-data
 * Spring-boot
+* QueryDSL
+* PostgreSQL
 * Lombok
 * Swagger
-* * url: http://localhost:8001/swagger-ui/index.html#/
-* querydsl
-
-
+* * url: http://localhost:8001/swagger-ui.html
 
 
 # Funcionalidades
@@ -15,4 +15,5 @@
 * * url: http://localhost:8001/criminoso/migrate
 * * Por padrão a migração inicial deve inserir 10 registros, podendo ser alterada a quantidade no arquivo "application.properties" > "quantidade.registros"
 * API para listar os dados dos criminosos com/sem filtro.
-* * ur: http://localhost:8001/criminoso
+* * filtro: CriminosoDTO
+* * url: http://localhost:8001/criminoso
